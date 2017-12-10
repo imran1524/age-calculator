@@ -20,8 +20,8 @@ document.getElementById('dateId').addEventListener('change', function(){
 //const birthMonth = 10;
 //const birthDay = 16;
 
-
-
+document.getElementById("calculateButton").onclick = function(){
+    
 const daysInMonthInLeapyear = [31,29,31,30,31,30,31,31,30,31,30,31];
 const daysInMonthInNotLeapyear = [31,28,31,30,31,30,31,31,30,31,30,31];
 
@@ -125,5 +125,10 @@ if (currentDay < birthDay){
 //console.log("Today your age is: " + ageInYear + " years " + ageInMonth + " months " + ageInDays + " days ")
 
 document.getElementById('age').innerHTML = "Today your age is: " + ageInYear + " years " + ageInMonth + " months " + ageInDays + " days ";
+};
+
+document.getElementById("resetButton").onclick = function(){
+    location.reload();
+}
     
 });
